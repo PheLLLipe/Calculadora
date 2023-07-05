@@ -1,4 +1,6 @@
 # Calculadora em grupo
 
-Phelipe
-Eduardo.
+Phelipe;
+Eduardo;
+
+Michel.
