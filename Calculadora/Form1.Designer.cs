@@ -100,6 +100,7 @@
             Controls.Add(primeiroNumero);
             Controls.Add(somar);
             Name = "Form1";
+            RightToLeftLayout = true;
             Text = "Form1";
             Load += Form1_Load;
             ResumeLayout(false);
