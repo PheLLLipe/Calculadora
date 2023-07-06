@@ -33,7 +33,7 @@
             segundoNumero = new TextBox();
             label1 = new Label();
             label2 = new Label();
-            resultado = new Label();
+            resultadoText = new Label();
             SuspendLayout();
             // 
             // somar
@@ -52,6 +52,7 @@
             primeiroNumero.Name = "primeiroNumero";
             primeiroNumero.Size = new Size(150, 31);
             primeiroNumero.TabIndex = 12;
+            primeiroNumero.TextChanged += primeiroNumero_TextChanged;
             // 
             // segundoNumero
             // 
@@ -79,21 +80,21 @@
             label2.Text = "2º Número";
             label2.Click += label2_Click;
             // 
-            // resultado
+            // resultadoText
             // 
-            resultado.AutoSize = true;
-            resultado.Location = new Point(373, 164);
-            resultado.Name = "resultado";
-            resultado.Size = new Size(22, 25);
-            resultado.TabIndex = 16;
-            resultado.Text = "0";
+            resultadoText.AutoSize = true;
+            resultadoText.Location = new Point(373, 164);
+            resultadoText.Name = "resultadoText";
+            resultadoText.Size = new Size(22, 25);
+            resultadoText.TabIndex = 16;
+            resultadoText.Text = "0";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(resultado);
+            Controls.Add(resultadoText);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(segundoNumero);
@@ -114,6 +115,6 @@
         private TextBox segundoNumero;
         private Label label1;
         private Label label2;
-        private Label resultado;
+        private Label resultadoText;
     }
 }

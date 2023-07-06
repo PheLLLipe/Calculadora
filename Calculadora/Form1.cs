@@ -14,10 +14,21 @@ namespace Calculadora
 
         private void button12_Click(object sender, EventArgs e)
         {
+            int primNum, segNum, resultado;
+            primNum = Int32.Parse(primeiroNumero.Text);
+            segNum = Int32.Parse(segundoNumero.Text);
 
+            resultado = primNum + segNum;
+
+            resultadoText.Text = resultado.ToString();
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void primeiroNumero_TextChanged(object sender, EventArgs e)
         {
 
         }
